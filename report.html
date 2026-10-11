@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Report an ICT problem to the TechCare help desk.">
+    <title>Report a Problem - TechCare</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <a class="brand" href="index.html" aria-label="TechCare home">
+            <span aria-hidden="true">💻</span> TechCare
+        </a>
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="report.html" aria-current="page">Report a Problem</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="report-section">
+            <div class="report-info">
+                <p class="small-title">WE ARE HERE TO HELP</p>
+                <h1>Let's Fix Your <span>Tech Problem!</span></h1>
+                <p>Complete the form with details about the problem you are experiencing. Please provide accurate information.</p>
+
+                <aside class="info-box">
+                    <h2><span aria-hidden="true">💡</span> Helpful Tip</h2>
+                    <p>Explain what happened and mention any error message displayed on your computer.</p>
+                </aside>
+            </div>
+
+            <div class="form-card">
+                <h2>Report a Problem</h2>
+                <p>Fill in the details below.</p>
+
+                <form id="reportForm">
+                    <label for="name">Full Name <span aria-hidden="true">*</span></label>
+                    <input type="text" id="name" name="name" autocomplete="name" placeholder="Enter your name" required>
+
+                    <label for="email">Email Address <span aria-hidden="true">*</span></label>
+                    <input type="email" id="email" name="email" autocomplete="email" placeholder="Enter your email" required>
+
+                    <label for="category">Problem Category <span aria-hidden="true">*</span></label>
+                    <select id="category" name="category" required>
+                        <option value="">Select a category</option>
+                        <option value="Computer Hardware">Computer Hardware</option>
+                        <option value="Network / Wi-Fi">Network / Wi-Fi</option>
+                        <option value="Software">Software</option>
+                        <option value="Printer">Printer</option>
+                        <option value="Other">Other</option>
+                    </select>
+
+                    <label for="description">Describe the Problem <span aria-hidden="true">*</span></label>
+                    <textarea id="description" name="description" rows="5" placeholder="Explain your problem here..." required></textarea>
+
+                    <button type="submit" class="button">Submit Report <span aria-hidden="true">→</span></button>
+                    <p id="message" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 TechCare ICT Help Desk | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
