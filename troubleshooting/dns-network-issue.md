@@ -10,7 +10,7 @@ A laptop was having a network/internet connection issue.
 - Opened the network adapter Properties
 - Checked IPv4 settings
 - Checked the IP configuration
-- IP address observed: `10.50.80.90`
+- IP address observed: ``
 - Checked the DNS settings
 
 ## What I changed
